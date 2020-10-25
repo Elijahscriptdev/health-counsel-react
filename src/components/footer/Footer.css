@@ -1,0 +1,14 @@
+.footer {
+  color: #2a527b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.footer ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #7b7d80;
+}

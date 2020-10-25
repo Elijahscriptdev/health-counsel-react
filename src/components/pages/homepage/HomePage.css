@@ -6,9 +6,6 @@ img {
 .homepage {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* padding: 20px 80px;
-    margin-top: 30%; */
 }
 
 .carousel-item {
@@ -33,6 +30,92 @@ img {
   background: #186279;
   color: #ffffff;
   border: none;
+}
+
+h2,
+h4 {
+  color: #2a527b;
+}
+
+h4 {
+  margin: 10px 0;
+}
+
+p,
+li {
+  color: rgb(88, 86, 86);
+}
+
+.doctors {
+  background: #e5eff5;
+  padding: 5px;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 0;
+  display: none !important;
+}
+
+.carousel-caption {
+  transition: all 0.25s linear;
+  /* background: rgba(70, 70, 70, 0.7)!important; */
+  background: linear-gradient(rgba(57, 35, 117, 0.45), rgba(29, 16, 16, 0.45));
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 0 !important;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  text-align: left;
+}
+
+.carousel-caption h3 {
+  position: relative;
+  left: 5%;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 400;
+  top: 19%;
+}
+
+.hero-btn {
+  position: relative;
+  left: 5%;
+  color: #ffffff;
+  background: #186279;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  top: 30%;
+  border: none;
+}
+
+.carousel-caption p {
+  position: relative;
+  left: 5%;
+  text-align: left;
+  color: #ffffff;
+  width: 400px;
+  top: 20%;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 /* .homepage {
