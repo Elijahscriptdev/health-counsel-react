@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -15,13 +16,13 @@ const NavBar = () => {
         <Navbar id='basic-navbar-nav'>
           <Nav className='ml nav-links'>
             <Nav.Link className='links' href='#home'>
-              Home
+              <Link to='/'>Home</Link>
             </Nav.Link>
             <Nav.Link className='links' href='#link'>
               About
             </Nav.Link>
             <Nav.Link className='links' href='#home'>
-              Doctors
+              <Link to='doctors'>Doctors</Link>
             </Nav.Link>
             <Nav.Link className='links' href='#link'>
               News
@@ -30,13 +31,13 @@ const NavBar = () => {
               Contact
             </Nav.Link>
             <Nav.Link className='links' href='#link'>
-              Login
+              <Link to='/login'>Login</Link>
             </Nav.Link>
             <Nav.Link className='links' href='#link'>
               logout
             </Nav.Link>
             <Nav.Link className='links' href='#link'>
-              Register
+              <Link to='/register'>Register</Link>
             </Nav.Link>
             {/* <NavDropdown className="links" title='Dropdown' id='basic-nav-dropdown'>
             <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
