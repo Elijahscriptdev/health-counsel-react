@@ -15,30 +15,30 @@ const NavBar = () => {
         {/* <Navbar.Toggle aria-controls='basic-navbar-nav' /> */}
         <Navbar id='basic-navbar-nav'>
           <Nav className='ml nav-links'>
-            <Nav.Link className='links' href='#home'>
+            <Nav className='links' href='#home'>
               <Link to='/'>Home</Link>
-            </Nav.Link>
-            <Nav.Link className='links' href='#link'>
+            </Nav>
+            <Nav className='links' href='#link'>
               About
-            </Nav.Link>
-            <Nav.Link className='links' href='#home'>
+            </Nav>
+            <Nav className='links' href='#home'>
               <Link to='doctors'>Doctors</Link>
-            </Nav.Link>
-            <Nav.Link className='links' href='#link'>
+            </Nav>
+            <Nav className='links' href='#link'>
               News
-            </Nav.Link>
-            <Nav.Link className='links' href='#home'>
+            </Nav>
+            <Nav className='links' href='#home'>
               Contact
-            </Nav.Link>
-            <Nav.Link className='links' href='#link'>
+            </Nav>
+            <Nav className='links' href='#link'>
               <Link to='/login'>Login</Link>
-            </Nav.Link>
-            <Nav.Link className='links' href='#link'>
+            </Nav>
+            <Nav className='links' href='#link'>
               logout
-            </Nav.Link>
-            <Nav.Link className='links' href='#link'>
+            </Nav>
+            <Nav className='links' href='#link'>
               <Link to='/register'>Register</Link>
-            </Nav.Link>
+            </Nav>
             {/* <NavDropdown className="links" title='Dropdown' id='basic-nav-dropdown'>
             <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
             <NavDropdown.Item href='#action/3.2'>
