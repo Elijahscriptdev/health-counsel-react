@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -16,14 +17,14 @@ const Footer = () => {
             <br />
             <br />
             <strong>Tel</strong>:{" "}
-            <a href='tel:+2348062540732' className=''>
+            <Link to='tel:+2348062540732' className=''>
               +2348062540732
-            </a>
+            </Link>
             <br />
             <strong>Mail</strong>:{" "}
-            <a href='mailto:elijjaaahhhh@gmail.com' className=''>
+            <Link to='mailto:elijjaaahhhh@gmail.com' className=''>
               elijjaaahhhh@gmail.com
-            </a>
+            </Link>
           </Col>
           <Col xs={12} md={4}>
             <h3>Services</h3>
