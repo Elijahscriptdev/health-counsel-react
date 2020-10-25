@@ -59,45 +59,64 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="mt-5">
-          <h2>Doctors</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Illum quod commodi doloremque veniam quia corporis 
-              magnam molestiae aut unde! Porro.</p>
-              <CustomBtn className='btn-doctor'>View more</CustomBtn>
+      <Container className='mt-5'>
+        <h2>Doctors</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quod
+          commodi doloremque veniam quia corporis magnam molestiae aut unde!
+          Porro.
+        </p>
+        <CustomBtn className='btn-doctor'>View more</CustomBtn>
         <Row>
           <Col xs={6} md={3}>
-            <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded />
+            <Image
+              src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg'
+              rounded
+            />
             <h4>Elijah Obominuru</h4>
             <p>Dentist</p>
           </Col>
           <Col xs={6} md={3}>
-            <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded />
+            <Image
+              src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg'
+              rounded
+            />
             <h4>Elijah Obominuru</h4>
             <p>Dentist</p>
           </Col>
           <Col xs={6} md={3}>
-            <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded />
+            <Image
+              src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg'
+              rounded
+            />
             <h4>Elijah Obominuru</h4>
             <p>Dentist</p>
           </Col>
           <Col xs={6} md={3}>
-            <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded />
+            <Image
+              src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg'
+              rounded
+            />
             <h4>Elijah Obominuru</h4>
             <p>Dentist</p>
           </Col>
         </Row>
       </Container>
-      <Container className="mt-5">
-          <h2>Medical services</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Illum quod commodi doloremque veniam quia corporis 
-              magnam molestiae aut unde! Porro.</p>
+      <Container className='mt-5'>
+        <h2>Medical services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quod
+          commodi doloremque veniam quia corporis magnam molestiae aut unde!
+          Porro.
+        </p>
         <Row>
           <Col xs={6} md={4}>
             {/* <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded /> */}
             <h4>Patient Care</h4>
-            <p>Our helpful staff takes care of each patient offering personal nurse.</p>
+            <p>
+              Our helpful staff takes care of each patient offering personal
+              nurse.
+            </p>
           </Col>
           <Col xs={6} md={4}>
             {/* <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded /> */}
@@ -112,7 +131,10 @@ const HomePage = () => {
           <Col xs={6} md={4}>
             {/* <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded /> */}
             <h4>Medical Advices</h4>
-            <p>Need advices for your health, consult any of our doctors by visiting our clinic.</p>
+            <p>
+              Need advices for your health, consult any of our doctors by
+              visiting our clinic.
+            </p>
           </Col>
           <Col xs={6} md={4}>
             {/* <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded /> */}
@@ -122,7 +144,10 @@ const HomePage = () => {
           <Col xs={6} md={4}>
             {/* <Image src='https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595706025/elijah_rhm0qv.jpg' rounded /> */}
             <h4>Check ups</h4>
-            <p>Regular check-ups elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <p>
+              Regular check-ups elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna.
+            </p>
           </Col>
         </Row>
       </Container>
