@@ -93,7 +93,7 @@ const DoctorRegister = () => {
         <div className='input-group'>
           <span className='input-group-addon'>
             {" "}
-            <i class='fas fa-stethoscope'></i>{" "}
+            <i className='fas fa-stethoscope'></i>{" "}
           </span>
           <input
             className='form-control'
@@ -108,7 +108,7 @@ const DoctorRegister = () => {
         <div className='input-group'>
           <span className='input-group-addon'>
             {" "}
-            <i class='fas fa-level-up-alt'></i>{" "}
+            <i className='fas fa-level-up-alt'></i>{" "}
           </span>
           <input
             className='form-control'
@@ -123,7 +123,7 @@ const DoctorRegister = () => {
         <div className='input-group'>
           <span className='input-group-addon'>
             {" "}
-            <i class='fas fa-percentage'></i>{" "}
+            <i className='fas fa-percentage'></i>{" "}
           </span>
           <input
             className='form-control'
