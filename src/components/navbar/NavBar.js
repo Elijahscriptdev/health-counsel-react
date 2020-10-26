@@ -31,13 +31,13 @@ const NavBar = () => {
               Contact
             </Nav>
             <Nav className='links' href='#link'>
-              <Link to='/login'>Login</Link>
+              <Link to='/patient/login'>Login</Link>
             </Nav>
             <Nav className='links' href='#link'>
               logout
             </Nav>
             <Nav className='links' href='#link'>
-              <Link to='/register'>Register</Link>
+              <Link to='/patient/register'>Register</Link>
             </Nav>
             {/* <NavDropdown className="links" title='Dropdown' id='basic-nav-dropdown'>
             <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>

@@ -4,8 +4,10 @@ import Footer from "./components/footer/Footer";
 import NavBar from "./components/navbar/NavBar";
 import Doctors from "./components/pages/doctors/Doctors";
 import HomePage from "./components/pages/homepage/HomePage";
-import Login from "./components/pages/login/Login";
-import Register from "./components/pages/register/Register";
+import LoginPatient from "./components/pages/login/Login";
+import RegisterPatient from "./components/pages/register/Register";
+import DoctorLogin from "./components/pages/doctor-login-reg/login/Login";
+import DoctorRegister from "./components/pages/doctor-login-reg/register/Register";
 // import './App.css';
 
 function App() {
@@ -15,8 +17,10 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/register' component={Register} />
+          <Route exact path='/patient/login' component={LoginPatient} />
+          <Route exact path='/patient/register' component={RegisterPatient} />
+          <Route exact path='/doctor/login' component={DoctorLogin} />
+          <Route exact path='/doctor/register' component={DoctorRegister} />
           <Route exact path='/doctors' component={Doctors} />
           {/* <Route exact path='/profile/:id' component={Profile} /> */}
         </Switch>
