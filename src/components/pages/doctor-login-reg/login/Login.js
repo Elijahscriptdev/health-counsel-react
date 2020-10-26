@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
-const LoginPatient = () => {
+const DoctorLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,7 +17,7 @@ const LoginPatient = () => {
 
   return (
     <div className='login-form '>
-      <h3 className='login-form-header'>Sign in as a PATIENT</h3>
+      <h3 className='login-form-header'>Sign in as a DOCTOR</h3>
       <form onSubmit={handleSubmit}>
         <div className='input-group'>
           <span className='input-group-addon'>
@@ -53,11 +53,13 @@ const LoginPatient = () => {
           Login
         </Button>
         <p className='alternate-form-link'>
-          <Link to='/patient/register'>I'm new here.</Link>
+          <Link to='/doctor/register'>
+            I don't have an account, Signup as a doctor.
+          </Link>
         </p>
       </form>
     </div>
   );
 };
 
-export default LoginPatient;
+export default DoctorLogin;

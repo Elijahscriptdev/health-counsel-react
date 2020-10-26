@@ -3,12 +3,17 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./register.css";
 
-const RegisterPatient = () => {
+const DoctorRegister = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
     password2: "",
+    speciality: "",
+    hospital: "",
+    age: "",
+    experience_level: "",
   });
 
   const onChange = (e) =>
@@ -17,7 +22,16 @@ const RegisterPatient = () => {
       [e.target.name]: e.target.value,
     });
 
-  const { name, email, password, password2 } = formData;
+  const {
+    name,
+    email,
+    password,
+    password2,
+    speciality,
+    hospital,
+    age,
+    experience_level,
+  } = formData;
 
   function validateForm() {
     return email.length > 0 && password.length > 0;
@@ -29,7 +43,7 @@ const RegisterPatient = () => {
 
   return (
     <div className='login-form '>
-      <h3 className='login-form-header'>Signup as a PATIENT</h3>
+      <h3 className='login-form-header'>Signup as a DOCTOR</h3>
       <form onSubmit={handleSubmit}>
         <div className='input-group'>
           <span className='input-group-addon'>
@@ -59,6 +73,66 @@ const RegisterPatient = () => {
             value={email}
             onChange={(e) => onChange(e)}
             required
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon'>
+            {" "}
+            <i className='fas fa-clinic-medical'></i>{" "}
+          </span>
+          <input
+            className='form-control'
+            type='text'
+            value={hospital}
+            placeholder='Hospital'
+            name='hospital'
+            onChange={(e) => onChange(e)}
+            // required
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon'>
+            {" "}
+            <i class='fas fa-stethoscope'></i>{" "}
+          </span>
+          <input
+            className='form-control'
+            type='text'
+            value={speciality}
+            placeholder='Speciality'
+            name='speciality'
+            onChange={(e) => onChange(e)}
+            // required
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon'>
+            {" "}
+            <i class='fas fa-level-up-alt'></i>{" "}
+          </span>
+          <input
+            className='form-control'
+            type='text'
+            value={experience_level}
+            placeholder='Years of experience'
+            name='experience_level'
+            onChange={(e) => onChange(e)}
+            // required
+          />
+        </div>
+        <div className='input-group'>
+          <span className='input-group-addon'>
+            {" "}
+            <i class='fas fa-percentage'></i>{" "}
+          </span>
+          <input
+            className='form-control'
+            type='text'
+            value={age}
+            placeholder='Age'
+            name='age'
+            onChange={(e) => onChange(e)}
+            // required
           />
         </div>
         <div className='input-group'>
@@ -95,11 +169,13 @@ const RegisterPatient = () => {
           Register
         </Button>
         <p className='alternate-form-link'>
-          <Link to='/patient/login'>I'm new here.</Link>
+          <Link to='/doctor/login'>
+            I already have an account, Login as a doctor.
+          </Link>
         </p>
       </form>
     </div>
   );
 };
 
-export default RegisterPatient;
+export default DoctorRegister;
