@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import axios from "axios";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./register.css";
@@ -11,26 +12,48 @@ const RegisterPatient = () => {
     password2: "",
   });
 
+  const { name, email, password, password2 } = formData;
+
   const onChange = (e) =>
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
 
-  const { name, email, password, password2 } = formData;
-
-  function validateForm() {
+  const validateForm = () => {
     return email.length > 0 && password.length > 0;
-  }
+  };
 
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    if (password !== password2) {
+      alert("Passwords dont match", "danger");
+    } else {
+      console.log("Success");
+      // try {
+      //   const config = {
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //   };
+      //   const newUser = { name, email, password, password2 };
+      //   const body = JSON.stringify(newUser);
+      //   const res = await axios.post(
+      //     "https://healthcounsel-api.herokuapp.com/signup",
+      //     body,
+      //     config
+      //   );
+      //   console.log(res);
+      // } catch (error) {
+      //   console.log(error.res);
+      // }
+    }
+  };
 
   return (
     <div className='login-form '>
       <h3 className='login-form-header'>Signup as a PATIENT</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => onSubmit(e)}>
         <div className='input-group'>
           <span className='input-group-addon'>
             {" "}
@@ -43,7 +66,7 @@ const RegisterPatient = () => {
             placeholder='Name'
             name='name'
             onChange={(e) => onChange(e)}
-            // required
+            required
           />
         </div>
         <div className='input-group'>
