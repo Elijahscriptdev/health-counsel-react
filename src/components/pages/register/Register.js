@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import "./register.css";
 import { setAlert } from "../../../actions/alert";
 import PropTypes from "prop-types";
+import { registerPatient } from "../../../actions/auth"
 
-const RegisterPatient = ({ setAlert }) => {
+const RegisterPatient = ({ setAlert, registerPatient }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,23 +34,7 @@ const RegisterPatient = ({ setAlert }) => {
       setAlert("Passwords dont match", "danger");
     } else {
       console.log("Success");
-      // try {
-      //   const config = {
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //   };
-      //   const newUser = { name, email, password, password2 };
-      //   const body = JSON.stringify(newUser);
-      //   const res = await axios.post(
-      //     "https://healthcounsel-api.herokuapp.com/signup",
-      //     body,
-      //     config
-      //   );
-      //   console.log(res);
-      // } catch (error) {
-      //   console.log(error.res);
-      // }
+      registerPatient({ name, email, password })
     }
   };
 
@@ -130,6 +115,7 @@ const RegisterPatient = ({ setAlert }) => {
 
 RegisterPatient.propTypes = {
   setAlert: PropTypes.func.isRequired,
+  registerPatient: PropTypes.func.isRequired,
 };
 
-export default connect(null, { setAlert })(RegisterPatient);
+export default connect(null, { setAlert, registerPatient })(RegisterPatient);
