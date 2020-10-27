@@ -31,3 +31,18 @@ function App() {
 }
 
 export default App;
+// "scripts": {
+  //   "dev": "react-scripts start",
+  //   "start": "serve -s build",
+  //   "build": "react-scripts build",
+  //   "test": "react-scripts test --env=jsdom",
+  //   "eject": "react-scripts eject",
+  //   "heroku-postbuild": "npm run build"
+  // }
+
+  // "scripts": {
+  //   "start": "react-scripts start",
+  //   "build": "react-scripts build",
+  //   "test": "react-scripts test",
+  //   "eject": "react-scripts eject"
+  // }
