@@ -9,10 +9,13 @@ import RegisterPatient from "./components/pages/register/Register";
 import DoctorLogin from "./components/pages/doctor-login-reg/login/Login";
 import DoctorRegister from "./components/pages/doctor-login-reg/register/Register";
 // import './App.css';
+// Redux
+import { Provider } from "react-redux";
+import store from "./store";
 
-function App() {
+const App = () => {
   return (
-    <>
+    <Provider store={store}>
       <Router>
         <NavBar />
         <Switch>
@@ -26,23 +29,23 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </Provider>
   );
-}
+};
 
 export default App;
 // "scripts": {
-  //   "dev": "react-scripts start",
-  //   "start": "serve -s build",
-  //   "build": "react-scripts build",
-  //   "test": "react-scripts test --env=jsdom",
-  //   "eject": "react-scripts eject",
-  //   "heroku-postbuild": "npm run build"
-  // }
+//   "dev": "react-scripts start",
+//   "start": "serve -s build",
+//   "build": "react-scripts build",
+//   "test": "react-scripts test --env=jsdom",
+//   "eject": "react-scripts eject",
+//   "heroku-postbuild": "npm run build"
+// }
 
-  // "scripts": {
-  //   "start": "react-scripts start",
-  //   "build": "react-scripts build",
-  //   "test": "react-scripts test",
-  //   "eject": "react-scripts eject"
-  // }
+// "scripts": {
+//   "start": "react-scripts start",
+//   "build": "react-scripts build",
+//   "test": "react-scripts test",
+//   "eject": "react-scripts eject"
+// }
