@@ -8,16 +8,18 @@ import LoginPatient from "./components/pages/login/Login";
 import RegisterPatient from "./components/pages/register/Register";
 import DoctorLogin from "./components/pages/doctor-login-reg/login/Login";
 import DoctorRegister from "./components/pages/doctor-login-reg/register/Register";
-// import './App.css';
+import './App.css';
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
+import Alert from './components/layout/Alert'
 
 const App = () => {
   return (
     <Provider store={store}>
       <Router>
         <NavBar />
+        <Alert />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/patient/login' component={LoginPatient} />

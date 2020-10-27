@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 // import axios from "axios";
 import { Button } from "react-bootstrap";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./register.css";
+import { setAlert } from "../../../actions/alert";
+import PropTypes from "prop-types";
 
-const RegisterPatient = () => {
+const RegisterPatient = ({ setAlert }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,10 +27,10 @@ const RegisterPatient = () => {
     return email.length > 0 && password.length > 0;
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     if (password !== password2) {
-      alert("Passwords dont match", "danger");
+      setAlert("Passwords dont match", "danger");
     } else {
       console.log("Success");
       // try {
@@ -125,4 +128,8 @@ const RegisterPatient = () => {
   );
 };
 
-export default RegisterPatient;
+RegisterPatient.propTypes = {
+  setAlert: PropTypes.func.isRequired,
+};
+
+export default connect(null, { setAlert })(RegisterPatient);
